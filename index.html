@@ -10,41 +10,22 @@
   </head>
   <body>
 
-    <!-- HEADER 2-->
-
-    <!-- <section id="header2">
-      <div class="header2 container"></div>
-      <div class="nav-bar">
-      </div>
-
-      <div class="nav-list">
-        <div class="hamburger"> <div class="bar"></div></div>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-    </section> -->
+  
       
       <!-- HEADER -->
+      <div class="header2">
        <header class="header">
-        <p class="logo">Tarik Kurtanovic</p>
+        <a href="#hero" class="logo">Tarik Kurtanovic</p>
 
         <nav class="navbar">
-          <a href="#" style="--i:1;">Home</a>
-          <a href="#" style="--i:2;">About</a>
-          <a href="#" style="--i:3;">Projects</a>
-          <a href="#" style="--i:4;">Skills</a>
-          <a href="#" style="--i:5;">Contact</a>
-          
+          <a href="#hero" style="--i:1;">Home</a>
+          <a href="#about" style="--i:2;">About</a>
+          <a href="#projects" style="--i:3;">Projects</a>
+          <a href="#skills" style="--i:4;">Skills</a>
+          <a href="#contact" style="--i:5;">Contact</a>
         </nav>
         
       </header>
-      <!--END HEADER-->
-    
 
       <!-- HOME SECTION-->
       <section id="hero">
@@ -55,14 +36,16 @@
             <p class="paragraph">Front-end Developer</p>
 
             <!-- In href I need to put my CV for download-->
-            <a href="" download class="cta">Download CV</a>
+            <a href="/PRAVILNIK-ZA-IZRADU-MASTER-RADA.pdf" preview class="cta">CV</a>
           </div>
         </div>
+      </section>
         <!-- END HOME SECTION-->
-        
-        
+      </div>
+      <!--END HEADER-->
+  
         <!-- ABOUT SECTION-->
-        <section class="about">
+        <section id="about">
           <!-- Implementing links about me-->
           <div class="about-sci">
             <a href="https://www.linkedin.com/in/tarik-kurtanovic-670491229"><i class='bx bxl-linkedin'></i></a>
@@ -75,7 +58,7 @@
             <p>
               I am a skilled front-end developer with expertise in JavaScript and React. I am passionate about creating dynamic and interactive web experiences. With a strong foundation in these technologies, I am always eager to learn and adapt to new technologies and frameworks, ensuring that I stay up-to-date with the latest trends in the industry. My portfolio showcases my ability to build responsive and user-friendly web applications that provide a seamless and engaging user experience.
             </p>
-            <a href="#" class="btn1">Contact Me</a>
+            <a href="#contact" class="btn1">Contact Me</a>
           </div>
 
           <!-- Implementing img-->
@@ -106,8 +89,8 @@
           <h1>Bankist App</h1>
           
           <div class="buttons">
-            <button class="live-demo">Live Demo</button>   
-            <button class="live-demo">Github</button>  
+            <a href="#" class="live-demo">Live Demo</a>   
+            <a href="#" class="live-demo">Github</a>  
                </div>
           
           </div>
@@ -164,7 +147,7 @@
           <div class="project-info">
           <h1>ToDo List</h1>
           <div class="buttons">
-            <a href="#" class="live-demo">Live Demo</a>   
+            <a href="/toDoList/todo.html" class="live-demo" target="_blank">Live Demo</a>   
             <a href="#" class="live-demo">Github</a> 
                </div>
           
@@ -188,6 +171,7 @@
             <img src="img/todolist.png" alt="Project thumbnail">
           </div>
         </div>
+        
 
       </div>
     </div>
@@ -203,7 +187,9 @@
        <h2>Skills</h2>
       </div>
 
+       <div class="expWrapper">
 
+      
       <div class="exp">
         <div class="all-content">
         <div class="icon">
@@ -245,6 +231,8 @@
   </div>
   </div>
 
+  
+
 
   <div class="all-content">
   <div class="icon">
@@ -259,6 +247,7 @@
   <p>Experienced</p>
 </div>
 </div>
+</div>
      </section>
     <!-- END SKILLS SECTION-->
 
@@ -270,31 +259,35 @@
       <h1>Contact Me</h1>
       
     </div>
-    
-    <div class="right-left">
-      <div class="contact-left">
-        <p> <i class='bx bx-envelope' ></i> tkurtanovic96@gmail.com</p>
-        <p>  <i class='bx bxs-phone' ></i> +381 62 9726429</p>
-        <div class="social-icons">
-          <a href="https://www.facebook.com/tarik.kurtanovic"><i class='bx bxl-facebook' ></i></a>
-          <a href="https://www.instagram.com/tarikkurtanovic/"><i class='bx bxl-instagram' ></i></a>
-          <a href="https://www.linkedin.com/in/tarik-kurtanovic-670491229"><i class='bx bxl-linkedin' ></i></a>
-           <!-- <a href="#"><i class='bx bxs-envelope' ></i></a> -->
-         </div>
-         
-      </div>
-      <div class="contact-right">
-
-        <form>
-          <input type="text" name="Name" placeholder="Your Name" required>
-          <input type="email" name="email" placeholder="Your Email" required>
-          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-          <button class="cta" type="Submit">Send Message</button>
-        </form>
-
-
+    <div class="right-leftWrapper">
+      <div class="right-left">
+        <div class="contact-left">
+          <p> <i class='bx bx-envelope' ></i> tkurtanovic96@gmail.com</p>
+          <p>  <i class='bx bxs-phone' ></i> +381 62 9726429</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/tarik.kurtanovic"><i class='bx bxl-facebook' ></i></a>
+            <a href="https://www.instagram.com/tarikkurtanovic/"><i class='bx bxl-instagram' ></i></a>
+            <a href="https://www.linkedin.com/in/tarik-kurtanovic-670491229"><i class='bx bxl-linkedin' ></i></a>
+          </div>
+          <!-- <a href="#"><i class='bx bxs-envelope' ></i></a> --> <a href="PRAVILNIK-ZA-IZRADU-MASTER-RADA.pdf" download class="cta" type="Submit">Download CV</a>
+           
+        </div>
+  
+        <div class="contact-right">
+  
+          <form action="https://formspree.io/f/xwkjdnvr"
+          method="POST">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button class="cta" type="Submit">Send Message</button>
+          </form>
+  
+  
+        </div>
       </div>
     </div>
+    
   
 
 </section> 
@@ -304,7 +297,12 @@
 
     <div class="copyright">
       <p>&copy; PORTFOLIO. All right reserved</p>
+      
+      <a href="#hero" class="cta cta2"><i class='bx bx-up-arrow-alt'></i></a>
     </div>
-<!-- END FOOTER SECTION-->
-  </body>
+      <!-- END FOOTER SECTION-->
+
+    <script src="script.js"></script>
+
+</body>
 </html>
