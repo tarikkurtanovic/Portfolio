@@ -17,20 +17,24 @@
        <header class="header">
         <a href="#hero" class="logo">Tarik Kurtanovic</p>
 
-        <nav class="navbar">
+          <div  class="nav">
+        <nav id="sidemenu" class="navbar">
           <a href="#hero" style="--i:1;">Home</a>
           <a href="#about" style="--i:2;">About</a>
           <a href="#projects" style="--i:3;">Projects</a>
           <a href="#skills" style="--i:4;">Skills</a>
           <a href="#contact" style="--i:5;">Contact</a>
+          <i class='bx bx-x' onclick="closemenu()" ></i>
         </nav>
+        <i class='bx bx-menu' class="hidden" onclick="openmenu()"></i>
+      </div>
         
       </header>
 
       <!-- HOME SECTION-->
       <section id="hero">
         <div  class="hero container">
-          <div>
+          <div class="heroWrapper">
             <h1>Hello, I am Tarik Kurtanovic</h1>
         
             <p class="paragraph">Front-end Developer</p>
@@ -48,8 +52,8 @@
         <section id="about">
           <!-- Implementing links about me-->
           <div class="about-sci">
-            <a href="https://www.linkedin.com/in/tarik-kurtanovic-670491229"><i class='bx bxl-linkedin'></i></a>
-            <a href="https://github.com/tarikkurtanovic"><i class='bx bxl-github' ></i></a>
+            <a href="https://www.linkedin.com/in/tarik-kurtanovic-670491229" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/tarikkurtanovic" target="_blank"><i class='bx bxl-github' ></i></a>
           </div>
 
           <div class="about-content">
@@ -84,28 +88,15 @@
 
 
       <div class="all-projects">
-        <div class="project-item">
-          <div class="project-info">
-          <h1>Bankist App</h1>
-          
-          <div class="buttons">
-            <a href="#" class="live-demo">Live Demo</a>   
-            <a href="#" class="live-demo">Github</a>  
-               </div>
-          
-          </div>
-          <div class="project-img">
-            <img src="img/project1.png" alt="Project thumbnail">
-          </div>
-        </div>
+
 
         <div class="project-item">
           <div class="project-info">
           <h1>CookBook App</h1>
 
           <div class="buttons">
-            <a href="#" class="live-demo">Live Demo</a>   
-            <a href="#" class="live-demo">Github</a> 
+            <a href="#" class="live-demo" target="_blank">Live Demo</a>   
+            <a href="#" class="live-demo" target="_blank">Github</a> 
                </div>
           </div>
           <div class="project-img">
@@ -113,13 +104,31 @@
           </div>
         </div>
 
+
+
+        <div class="project-item">
+          <div class="project-info">
+          <h1>Bankist App</h1>
+          
+          <div class="buttons">
+            <a href="#" class="live-demo" target="_blank">Live Demo</a>   
+            <a href="#" class="live-demo" target="_blank">Github</a>  
+               </div>
+          
+          </div>
+          <div class="project-img">
+            <img src="img/project1.png" alt="Project thumbnail">
+          </div>
+        </div>
+
+
         <div class="project-item">
           <div class="project-info">
           <h1>Dice Score Battle</h1>
 
           <div class="buttons">
-            <a href="#" class="live-demo">Live Demo</a>   
-            <a href="https://github.com/tarikkurtanovic/Dice-Score-Battle" class="live-demo">Github</a>  
+            <a href="#" target="_blank"  class="live-demo">Live Demo</a>   
+            <a href="https://github.com/tarikkurtanovic/Dice-Score-Battle" target="_blank" class="live-demo">Github</a>  
                </div>
           
           </div>
@@ -156,23 +165,6 @@
             <img src="img/todolist.png" alt="Project thumbnail">
           </div>
         </div>
-
-        <div class="project-item">
-          <div class="project-info">
-          <h1>ToDo List</h1>
-
-          <div class="buttons">
-            <a href="#" class="live-demo">Live Demo</a>   
-            <a href="#" class="live-demo">Github</a> 
-               </div>
-          
-          </div>
-          <div class="project-img">
-            <img src="img/todolist.png" alt="Project thumbnail">
-          </div>
-        </div>
-        
-
       </div>
     </div>
    </section>
@@ -264,12 +256,14 @@
         <div class="contact-left">
           <p> <i class='bx bx-envelope' ></i> tkurtanovic96@gmail.com</p>
           <p>  <i class='bx bxs-phone' ></i> +381 62 9726429</p>
-          <div class="social-icons">
-            <a href="https://www.facebook.com/tarik.kurtanovic"><i class='bx bxl-facebook' ></i></a>
-            <a href="https://www.instagram.com/tarikkurtanovic/"><i class='bx bxl-instagram' ></i></a>
-            <a href="https://www.linkedin.com/in/tarik-kurtanovic-670491229"><i class='bx bxl-linkedin' ></i></a>
+          <div class="social-icons" ">
+            <a href="https://www.facebook.com/tarik.kurtanovic" target="_blank"><i class='bx bxl-facebook' ></i></a>
+            <a href="https://www.instagram.com/tarikkurtanovic/" target="_blank"><i class='bx bxl-instagram' ></i></a>
+            <a href="https://www.linkedin.com/in/tarik-kurtanovic-670491229" target="_blank"><i class='bx bxl-linkedin' ></i></a>
           </div>
-          <!-- <a href="#"><i class='bx bxs-envelope' ></i></a> --> <a href="PRAVILNIK-ZA-IZRADU-MASTER-RADA.pdf" download class="cta" type="Submit">Download CV</a>
+
+          <!-- href is test-->
+          <a href="backgrounds/2.jpeg" download class="cta" type="Submit">Download CV</a>
            
         </div>
   
@@ -288,20 +282,19 @@
       </div>
     </div>
     
-  
-
 </section> 
     <!-- END CONTACT SECTION-->
 
     <!-- FOOTER SECTION-->
+    <div class="upArrow">
+      <a href="#hero" class="cta cta2"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
 
     <div class="copyright">
       <p>&copy; PORTFOLIO. All right reserved</p>
-      
-      <a href="#hero" class="cta cta2"><i class='bx bx-up-arrow-alt'></i></a>
     </div>
-      <!-- END FOOTER SECTION-->
 
+      <!-- END FOOTER SECTION-->
     <script src="script.js"></script>
 
 </body>

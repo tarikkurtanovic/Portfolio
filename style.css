@@ -17,7 +17,7 @@ a {
 }
 
 body {
-  background-image: url(img/background2.jpg);
+  background-image: url(backgrounds/3phone.jpeg);
   background-size: cover;
   background-position: top center;
   position: relative;
@@ -40,8 +40,8 @@ body {
   padding: 20px 10%;
   background: linear-gradient(
     60deg,
-    rgba(41, 50, 60, 0.5),
-    rgba(72, 85, 99, 0.5) 50%
+    rgba(41, 50, 60, 0.8),
+    rgba(72, 85, 99, 1) 50%
   );
   display: flex;
   justify-content: space-between;
@@ -530,10 +530,12 @@ body {
 }
 
 /* Buttons for projects*/
+
 .live-demo {
   position: relative;
   display: inline-flex;
-  justify-content: center;
+  justify-content: space-around;
+  margin: 0 20px;
   align-items: center;
   width: 130px;
   height: 38px;
@@ -648,10 +650,10 @@ body {
   flex-direction: column;
 }
 .exp:hover {
-  background-image: linear-gradient(
+  background: linear-gradient(
     60deg,
-    rgba(41, 50, 60),
-    rgba(72, 85, 99) 100%
+    rgba(41, 50, 60, 0.8),
+    rgba(72, 85, 99, 0.8) 50%
   );
 }
 .experience h1 {
@@ -856,24 +858,102 @@ form .cta {
   display: block;
 }
 .copyright {
-  height: 300px;
+  height: 100px;
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
 .copyright p {
-  font-size: 20px;
+  font-size: 15px;
   padding: 20px 0;
-  margin-top: 30px;
-  margin-right: 40px;
+  /* margin-top: 200px; */
+}
+
+.upArrow {
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+  padding: 50px;
+  margin-top: 50px;
+  margin-right: 150px;
 }
 
 /* -----------------CSS for small screen ------------ */
-
+.header .bx {
+  display: none;
+}
 @media only screen and (max-width: 850px) {
+  body {
+    background-image: url(backgrounds/3phone.jpeg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .header .logo {
+    font-size: 20px;
+  }
+
+  .header .bx {
+    display: block;
+    font-size: 25px;
+  }
+
+  .hidden {
+    opacity: 1;
+  }
+
+  #sidemenu {
+    display: block;
+    justify-content: end;
+    align-items: flex-end;
+    padding-left: 20px;
+  }
+
+  #sidemenu .navbar {
+    display: block;
+    /* align-items: center; */
+  }
+  .nav nav {
+    background: linear-gradient(
+      60deg,
+      rgba(41, 50, 60, 0.8),
+      rgba(72, 85, 99, 1) 50%
+    );
+    position: fixed;
+    top: 0;
+    right: -200px;
+    min-width: 200px;
+    min-height: ;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+  .nav nav a {
+    display: block;
+    margin: 25px;
+  }
+
+  .nav nav .bx {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+    padding-right: 20px;
+  }
+  .upArrow {
+    min-width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-left: 160px; */
+  }
   .hero {
     padding: 40px;
     min-height: auto;
@@ -887,9 +967,10 @@ form .cta {
     padding-top: 0;
   }
   .about-sci {
-    width: 100%;
+    width: auto;
     margin-left: 10px;
   }
+
   .right-left {
     flex-direction: column-reverse;
   }
@@ -901,9 +982,6 @@ form .cta {
   }
   .contact-right {
     width: 90%;
-  }
-  .cta {
-    width: 100%;
   }
 
   .contact-left i {
@@ -930,23 +1008,30 @@ form .cta {
   .contact-left {
     width: 90%;
   }
+
+  .contact-left p {
+    display: flex;
+    flex-direction: row;
+  }
   .copyright {
     padding: 20px;
   }
-
+  .copyright p {
+    font-size: 15px;
+  }
   .about-img .glowing-circle::after {
     content: "";
     position: absolute;
-    width: 230px;
-    height: 230px;
+    width: 210px;
+    height: 210px;
     background-color: #0c1022;
     border-radius: 50%;
   }
 
-  .glowing-circle span {
+  /* .glowing-circle span {
     position: absolute;
-    width: 105%;
-    height: 105%;
+    width: 103%;
+    height: 103%;
     background: linear-gradient(
       45deg,
       rgb(10, 82, 189),
@@ -955,12 +1040,12 @@ form .cta {
     );
     border-radius: 50%;
     animation: circleRotate 5s linear infinite;
-  }
+  } */
 
   .glowing-circle .image {
     position: relative;
-    width: 250px;
-    height: 250px;
+    width: 240px;
+    height: 240px;
     border-radius: 50%;
     z-index: 1;
     overflow: hidden;
@@ -972,5 +1057,21 @@ form .cta {
     transform: translateX(-50%);
     max-width: 270px;
     object-fit: cover;
+  }
+
+  .buttons {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    margin-top: 30px;
+  }
+  .live-demo {
+    margin-top: 20px;
+  }
+
+  .social-icons {
+    /* width: auto; */
+    padding-left: 30px;
   }
 }
