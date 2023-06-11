@@ -5,249 +5,247 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="css.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Portfolio</title>
   </head>
   <body>
 
-  
-      
       <!-- HEADER -->
-      <div class="header2">
-       <header class="header">
+      <!-- <div class="header2 "> -->
+       <header class="header sticky">
         <a href="#hero" class="logo">Tarik Kurtanovic</p>
 
           <div  class="nav">
         <nav id="sidemenu" class="navbar">
           <a href="#hero" style="--i:1;">Home</a>
-          <a href="#about" style="--i:2;">About</a>
+          <a href="#skills" style="--i:4;">Technologies</a> 
           <a href="#projects" style="--i:3;">Projects</a>
-          <a href="#skills" style="--i:4;">Skills</a>
+          <a href="#about" style="--i:2;">About</a>
           <a href="#contact" style="--i:5;">Contact</a>
-          <i class='bx bx-x' onclick="closemenu()" ></i>
+          <i class='bx bx-x' onclick="closemenu()"></i>
         </nav>
         <i class='bx bx-menu' class="hidden" onclick="openmenu()"></i>
       </div>
+      
+    </header>
+    
+    <!-- HOME SECTION-->
+    <section id="hero">
+      <div  class="hero ">
+        <div class="heroWrapper">
+          <h1>Hello, I am Tarik Kurtanovic</h1>
+          
+          <p class="paragraph">Front-end Developer</p>
+          
+          <!-- In href I need to put my CV for download-->
+          <a href="pathways.pdf" target="_blank" download class="cta">CV</a>
+        </div>
         
-      </header>
-
-      <!-- HOME SECTION-->
-      <section id="hero">
-        <div  class="hero container">
-          <div class="heroWrapper">
-            <h1>Hello, I am Tarik Kurtanovic</h1>
-        
-            <p class="paragraph">Front-end Developer</p>
-
-            <!-- In href I need to put my CV for download-->
-            <a href="/PRAVILNIK-ZA-IZRADU-MASTER-RADA.pdf" preview class="cta">CV</a>
+        <div class="about-img">
+          <div class="glowing-circle">
+            <span></span>
+            <span></span>
+            <div class="image">
+              <img src="img/IMG-5029 1.png" alt="My img">
+            </div>
           </div>
         </div>
-      </section>
-        <!-- END HOME SECTION-->
       </div>
-      <!--END HEADER-->
-  
-        <!-- ABOUT SECTION-->
-        <section id="about">
-          <!-- Implementing links about me-->
-          <div class="about-sci">
-            <a href="https://www.linkedin.com/in/tarik-kurtanovic-670491229" target="_blank"><i class='bx bxl-linkedin'></i></a>
-            <a href="https://github.com/tarikkurtanovic" target="_blank"><i class='bx bxl-github' ></i></a>
-          </div>
-
-          <div class="about-content">
-            <h2>Get To Know</h2>
-            <h3>About Me</h3>
-            <p>
-              I am a skilled front-end developer with expertise in JavaScript and React. I am passionate about creating dynamic and interactive web experiences. With a strong foundation in these technologies, I am always eager to learn and adapt to new technologies and frameworks, ensuring that I stay up-to-date with the latest trends in the industry. My portfolio showcases my ability to build responsive and user-friendly web applications that provide a seamless and engaging user experience.
-            </p>
-            <a href="#contact" class="btn1">Contact Me</a>
-          </div>
-
-          <!-- Implementing img-->
-            <div class="about-img">
-              <div class="glowing-circle">
-                  <span></span>
-                  <span></span>
-                <div class="image">
-                  <img src="img/pics.jpg" alt="My img">
-                </div>
-              </div>
-            </div>
     </section>
-    <!-- END ABOUT SECTION-->
+    <!-- END HOME SECTION-->
+  <!-- </div> -->
+  <!--END HEADER-->
+  <!-- SKILLS SECTION-->
+   <section id="skills">
 
-    <!-- PROJECTS SECTION-->
-   <section id="projects">
-
-    <div class="projects container">
+    <div class="skills ">
       <div class="projects-header">
-        <h1 class="section-title">Recent Projects</h1>
-      </div>
-
-
-      <div class="all-projects">
-
-
-        <div class="project-item">
-          <div class="project-info">
-          <h1>CookBook App</h1>
-
-          <div class="buttons">
-            <a href="#" class="live-demo" target="_blank">Live Demo</a>   
-            <a href="#" class="live-demo" target="_blank">Github</a> 
-               </div>
-          </div>
-          <div class="project-img">
-            <img src="img/project1.png" alt="Project thumbnail">
-          </div>
-        </div>
-
-
-
-        <div class="project-item">
-          <div class="project-info">
-          <h1>Bankist App</h1>
-          
-          <div class="buttons">
-            <a href="#" class="live-demo" target="_blank">Live Demo</a>   
-            <a href="#" class="live-demo" target="_blank">Github</a>  
-               </div>
-          
-          </div>
-          <div class="project-img">
-            <img src="img/project1.png" alt="Project thumbnail">
-          </div>
-        </div>
-
-
-        <div class="project-item">
-          <div class="project-info">
-          <h1>Dice Score Battle</h1>
-
-          <div class="buttons">
-            <a href="#" target="_blank"  class="live-demo">Live Demo</a>   
-            <a href="https://github.com/tarikkurtanovic/Dice-Score-Battle" target="_blank" class="live-demo">Github</a>  
-               </div>
-          
-          </div>
-          <div class="project-img">
-            <img src="img/battlescore.png" alt="Project thumbnail">
-            </div>
-           </div>
-
-        <div class="project-item">
-          <div class="project-info">
-          <h1>Mapty App</h1>
-
-          <div class="buttons">
-            <a href="#" class="live-demo">Live Demo</a>   
-            <a href="#" class="live-demo">Github</a>   
-               </div>
-          
-          </div>
-          <div class="project-img">
-            <img src="img/mapty.png" alt="Project thumbnail">
-          </div>
-        </div>
-
-        <div class="project-item">
-          <div class="project-info">
-          <h1>ToDo List</h1>
-          <div class="buttons">
-            <a href="/toDoList/todo.html" class="live-demo" target="_blank">Live Demo</a>   
-            <a href="#" class="live-demo">Github</a> 
-               </div>
-          
-          </div>
-          <div class="project-img">
-            <img src="img/todolist.png" alt="Project thumbnail">
-          </div>
-        </div>
-      </div>
+     <h2>Technologies</h2>
     </div>
-   </section>
-    <!-- END PROJECTS SECTION-->
+  </div>
 
+     <div class="expWrapper">
 
-    <!-- SKILLS SECTION-->
-     <section id="skills">
-
-      <div class="skills container">
-        <h1>My Experience</h1>
-       <h2>Skills</h2>
-      </div>
-
-       <div class="expWrapper">
-
-      
-      <div class="exp">
-        <div class="all-content">
-        <div class="icon">
-          <span> 
-            <i class='bx bx-badge-check'></i>
-          </span>
-        </div>
-      
-
-        <div class="experience">
-        <h1>JavaScript</h1>
-        <p>Experienced</p>
-      </div>
-    </div>
-
-<div class="all-content">
+    
+    <div class="exp">
+      <div class="all-content">
       <div class="icon">
         <span> 
           <i class='bx bx-badge-check'></i>
         </span>
       </div>
+    
+
       <div class="experience">
-      <h1>React JS</h1>
-      <p>Intermediate</p>
+      <h1>JavaScript</h1>
+      <p>Experienced</p>
     </div>
   </div>
 
-
-       <div class="all-content">
-      <div class="icon">
+<div class="all-content">
+    <div class="icon">
       <span> 
         <i class='bx bx-badge-check'></i>
-
       </span>
     </div>
     <div class="experience">
-    <h1>HTML</h1>
-    <p>Experienced</p>
+    <h1>React JS</h1>
+    <p>Intermediate</p>
   </div>
-  </div>
-
-  
+</div>
 
 
-  <div class="all-content">
-  <div class="icon">
+     <div class="all-content">
+    <div class="icon">
     <span> 
       <i class='bx bx-badge-check'></i>
 
     </span>
   </div>
-
   <div class="experience">
-  <h1>CSS</h1>
+  <h1>HTML</h1>
   <p>Experienced</p>
 </div>
 </div>
-</div>
-     </section>
-    <!-- END SKILLS SECTION-->
 
+
+
+
+<div class="all-content">
+<div class="icon">
+  <span> 
+    <i class='bx bx-badge-check'></i>
+
+  </span>
+</div>
+
+<div class="experience">
+<h1>CSS</h1>
+<p>Experienced</p>
+</div>
+</div>
+</div>
+   </section>
+  <!-- END SKILLS SECTION-->
+      <!-- PROJECTS SECTION-->
+      <section id="projects">
+        
+      <div class="projects">
+        <div class="projects-header">
+          <h1 class="section-title">Recent Projects</h1>
+        </div>
+        
+        
+        <div class="all-projects">
+  
+  
+          <div class="project-item">
+            <div class="project-info">
+            <h1>CookBook App</h1>
+  
+            <div class="buttons">
+              <a href="/projects/CookBook App   HTML,CSS, JS/dist/index.html" class="live-demo" target="_blank">Live Demo</a>   
+              <a href="#" class="live-demo" target="_blank">Github</a> 
+                 </div>
+            </div>
+            <div class="project-img">
+              <img src="img/cookbookimg.png" alt="Project thumbnail">
+            </div>
+          </div>
+  
+  
+  
+          <div class="project-item">
+            <div class="project-info">
+            <h1>Bankist App</h1>
+            
+            <div class="buttons">
+              <a href="/projects/Bankist App HTML, CSS, JS/starter/index.html" class="live-demo" target="_blank">Live Demo</a>   
+              <a href="#" class="live-demo" target="_blank">Github</a>  
+                 </div>
+            
+            </div>
+            <div class="project-img">
+              <img src="img/project1.png" alt="Project thumbnail">
+            </div>
+          </div>
+  
+  
+          <div class="project-item">
+            <div class="project-info">
+            <h1>Dice Score Battle</h1>
+  
+            <div class="buttons">
+              <a href="/projects/Dice Score Battle/index.html" target="_blank"  class="live-demo">Live Demo</a>   
+              <a href="https://github.com/tarikkurtanovic/Dice-Score-Battle" target="_blank" class="live-demo">Github</a>  
+                 </div>
+            
+            </div>
+            <div class="project-img">
+              <img src="img/battlescore.png" alt="Project thumbnail">
+              </div>
+             </div>
+  
+          <div class="project-item">
+            <div class="project-info">
+            <h1>Mapty App</h1>
+  
+            <div class="buttons">
+              <a href="#" class="live-demo">Live Demo</a>   
+              <a href="#" class="live-demo">Github</a>   
+                 </div>
+            
+            </div>
+            <div class="project-img">
+              <img src="img/mapty.png" alt="Project thumbnail">
+            </div>
+          </div>
+  
+          <div class="project-item">
+            <div class="project-info">
+            <h1>ToDo List</h1>
+            <div class="buttons">
+              <a href="/projects/To Do List App HTML, CSS, JS/todoindex.html" class="live-demo" target="_blank">Live Demo</a>   
+              <a href="https://github.com/tarikkurtanovic/To-Do-List-App"  class="live-demo" target="_blank">Github</a> 
+                 </div>
+            
+            </div>
+            <div class="project-img">
+              <img src="img/todolist.png" alt="Project thumbnail">
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+      <!-- END PROJECTS SECTION-->
+  
+        <!-- ABOUT SECTION-->
+        <section id="about">
+          <div class="about">
+          <div class="h2h3">
+          <h2>Get To Know</h2>
+          <h3>About Me</h3>
+          </div>
+          <div class="about-content">
+            <p>
+              I am a skilled front-end developer with expertise in JavaScript and React. I am passionate about creating dynamic and interactive web experiences. With a strong foundation in these technologies, I am always eager to learn and adapt to new technologies and frameworks, ensuring that I stay up-to-date with the latest trends in the industry. My portfolio showcases my ability to build responsive and user-friendly web applications that provide a seamless and engaging user experience.
+            </p>
+            <!-- <a href="#contact" class="btn1">Contact Me</a> -->
+            <!-- Implementing links about me-->
+            <div class="about-sci">
+              <a href="https://www.linkedin.com/in/tarik-kurtanovic-670491229" target="_blank"><i class='bx bxl-linkedin'></i></a>
+              <a href="https://github.com/tarikkurtanovic" target="_blank"><i class='bx bxl-github' ></i></a>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- END ABOUT SECTION-->
 
     <!-- CONTACT SECTION-->
 <section id="contact">
     <div class="row">
-        <div class="heading container">
+        <div class="heading">
       <h1>Contact Me</h1>
       
     </div>
@@ -260,15 +258,10 @@
             <a href="https://www.facebook.com/tarik.kurtanovic" target="_blank"><i class='bx bxl-facebook' ></i></a>
             <a href="https://www.instagram.com/tarikkurtanovic/" target="_blank"><i class='bx bxl-instagram' ></i></a>
             <a href="https://www.linkedin.com/in/tarik-kurtanovic-670491229" target="_blank"><i class='bx bxl-linkedin' ></i></a>
-          </div>
-
-          <!-- href is test-->
-          <a href="backgrounds/2.jpeg" download class="cta" type="Submit">Download CV</a>
-           
+          </div>  
         </div>
   
         <div class="contact-right">
-  
           <form action="https://formspree.io/f/xwkjdnvr"
           method="POST">
             <input type="text" name="Name" placeholder="Your Name" required>
@@ -276,12 +269,9 @@
             <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
             <button class="cta" type="Submit">Send Message</button>
           </form>
-  
-  
         </div>
       </div>
     </div>
-    
 </section> 
     <!-- END CONTACT SECTION-->
 
@@ -295,7 +285,10 @@
     </div>
 
       <!-- END FOOTER SECTION-->
-    <script src="script.js"></script>
+
+    
+
+    <script  src="script.js"></script>
 
 </body>
 </html>

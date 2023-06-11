@@ -14,7 +14,12 @@ filterOption.addEventListener("click", filterTodo);
 function addTodo(event) {
   // prevent form from subbmiting
   event.preventDefault();
-  console.log("hello");
+
+  //Checking if the value is empty
+  const todoText = todoInput.value.trim();
+  if (todoText === "") {
+    return;
+  }
 
   //Todo Div
   const todoDiv = document.createElement("div");
@@ -70,6 +75,7 @@ function deleteCheck(e) {
 
 function filterTodo(e) {
   const todos = todoList.childNodes;
+
   todos.forEach(function (todo) {
     switch (e.target.value) {
       case "all":
@@ -146,13 +152,12 @@ function getTodos() {
 }
 
 function removeLocalTodos(todo) {
-  // Check --hey do i already have thing in there
+  // Check --hey do i already have thing in lOCAL STORAGE
   let todos;
   if (localStorage.getItem("todos") === null) {
-    //--------------------totalno nejasnooo------------- nisam radio local storage
     todos = [];
   } else {
-    todos = JSON.parse(localStorage.getItem("todos")); // totalno nejasnoooooo---------------------------
+    todos = JSON.parse(localStorage.getItem("todos"));
   }
   const todoIndex = todo.children[0].innerText;
   todos.splice(todos.indexOf(todoIndex), 1);
