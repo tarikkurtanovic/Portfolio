@@ -7,5 +7,5 @@ function openmenu() {
 }
 
 function closemenu() {
-  sidemenu.style.right = "-200px";
+  sidemenu.style.right = "-400px";
 }
