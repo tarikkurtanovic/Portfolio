@@ -306,7 +306,7 @@ body {
 
 .about-sci {
   display: flex;
-  gap: 40px;
+  gap: 30px;
 }
 
 .about-sci a {
@@ -783,6 +783,7 @@ body {
 }
 
 .contact-left p {
+  color: white;
   margin-top: 30px;
   font-size: 30px;
   word-wrap: break-word;
@@ -793,68 +794,8 @@ body {
   font-size: 35px;
 }
 
-.social-icons {
-  margin-top: 10px;
-  display: flex;
-  gap: 40px;
-}
-
-.social-icons a {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 60px;
-  height: 60px;
-  background: linear-gradient(
-    45deg,
-    rgb(10, 82, 189),
-    rgb(13, 82, 82),
-    rgb(52, 150, 7)
-  );
-  border-radius: 50%;
-  font-size: 30px;
-  color: #fff;
-  text-decoration: none;
-  margin: 20px 0;
-  z-index: 1;
-  margin-right: 30px;
-}
-
-.social-icons a::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    45deg,
-    rgb(10, 82, 189),
-    rgb(13, 82, 82),
-    rgb(52, 150, 7)
-  );
-  border-radius: 50%;
-  z-index: -1;
-  transition: 0.5s ease;
-}
-
-.social-icons a:hover::before {
-  filter: blur(5px);
-}
-
-.social-icons a::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #0c1022;
-  border-radius: 50%;
-  transform: scale(0.88);
-  z-index: -1;
-  transition: 0.5s ease;
-}
-
-.social-icons a:hover::after {
-  transform: scale(0);
+.contact-left p a {
+  color: white;
 }
 
 .contact-right form {
@@ -886,11 +827,6 @@ form .cta {
   width: 50px !important;
 }
 
-#msg {
-  color: white;
-  font-size: 15px;
-  display: block;
-}
 .copyright {
   height: 100px;
   width: 100%;
@@ -909,9 +845,9 @@ form .cta {
   display: flex;
   justify-content: flex-end;
   align-items: end;
-  padding: 50px;
   padding-right: 200px;
-  margin-top: 50px;
+  margin-top: 40px;
+  padding-top: 50px;
 }
 
 /* -----------------CSS for small screen ------------ */
@@ -1056,7 +992,7 @@ form .cta {
 
   #skills {
     width: 100%;
-    margin-top: -100px;
+    margin-top: 100px;
     min-height: auto;
     padding: 0;
   }
@@ -1077,15 +1013,14 @@ form .cta {
     max-width: 100%;
     display: flex;
     padding: 10px 20px;
-    margin-top: 100px;
+    margin-top: 300px;
   }
 
   .projects-header {
     width: 100%;
     display: flex;
     padding: 0;
-    padding-top: 200px;
-
+    /* padding-top: 200px; */
     justify-content: center;
     align-items: center;
     border-bottom: none;
@@ -1134,12 +1069,20 @@ form .cta {
   .about-sci {
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 10px;
     width: auto;
     padding: 0;
     justify-content: center;
     align-items: center;
   }
+
+  .about-sci i {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .about-content p {
     font-size: 15px;
   }
@@ -1189,17 +1132,18 @@ form .cta {
     margin-top: 0;
   }
   .contact-left p {
+    color: white;
     font-size: 14px;
     display: flex;
     flex-direction: row;
+  }
+  .contact-left p i {
+    font-size: 20px;
   }
   .contact-right {
     width: 90%;
   }
 
-  .contact-left i {
-    font-size: 15px !important;
-  }
   .exp {
     width: 90%;
   }
@@ -1232,20 +1176,9 @@ form .cta {
   .live-demo {
     margin-top: 20px;
   }
-  .social-icons {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    width: 250px;
-    padding: 0;
-    justify-content: center;
-    align-items: center;
-  }
-  .social-icons i {
-    font-size: 120px;
-  }
 
   .upArrow {
+    margin-top: 200px;
     width: 100%;
     display: flex;
     padding: 0px 20px;
