@@ -14,6 +14,7 @@ html {
 }
 a {
   text-decoration: none;
+  color: #ffffff !important;
 }
 
 body {
@@ -306,7 +307,7 @@ body {
 
 .about-sci {
   display: flex;
-  gap: 30px;
+  /* padding-right: 20px; */
 }
 
 .about-sci a {
@@ -326,7 +327,7 @@ body {
   font-size: 30px;
   color: #fff;
   text-decoration: none;
-  margin: 40px 0;
+  margin: 40px 20px;
   z-index: 1;
 }
 
@@ -672,7 +673,6 @@ body {
   display: flex;
   justify-content: center;
   padding-top: 150px;
-  /* padding-bottom: 70px;F */
 }
 .exp {
   width: 100%;
@@ -787,15 +787,16 @@ body {
   margin-top: 30px;
   font-size: 30px;
   word-wrap: break-word;
+  text-decoration: none;
+}
+.contact-left a {
+  color: white;
+  text-decoration: none;
 }
 .contact-left p i {
   color: white;
   margin-right: 15px;
   font-size: 35px;
-}
-
-.contact-left p a {
-  color: white;
 }
 
 .contact-right form {
@@ -921,14 +922,14 @@ form .cta {
 
   #hero {
     width: 100%;
-    height: 100vh;
-    padding: 0 50px;
+    height: auto;
+    padding: 30px;
   }
 
   #hero .hero {
-    padding-top: 100px;
+    padding-top: 50px;
     display: flex;
-    max-height: auto;
+    height: auto;
     flex-direction: column;
   }
 
@@ -944,7 +945,7 @@ form .cta {
   }
   .about-img {
     display: flex;
-    padding-top: 200px;
+    padding-top: 100px;
   }
   .about-img .glowing-circle::after {
     content: "";
@@ -988,13 +989,13 @@ form .cta {
 
   #about {
     width: 100%;
+    height: auto;
+    padding: 0;
   }
 
   #skills {
     width: 100%;
-    margin-top: 100px;
-    min-height: auto;
-    padding: 0;
+    height: auto;
   }
   .skills {
     min-width: 100%;
@@ -1003,24 +1004,26 @@ form .cta {
   }
 
   .expWrapper {
-    padding: 0 20px;
+    padding: 20px;
     width: 100%;
-    margin-top: 100px;
-    margin-bottom: 200px;
+  }
+
+  #projects {
+    width: 100%;
+    height: auto;
+    padding-top: 100px;
   }
 
   .projects {
     max-width: 100%;
     display: flex;
     padding: 10px 20px;
-    margin-top: 300px;
   }
 
   .projects-header {
     width: 100%;
     display: flex;
     padding: 0;
-    /* padding-top: 200px; */
     justify-content: center;
     align-items: center;
     border-bottom: none;
@@ -1031,7 +1034,7 @@ form .cta {
   }
 
   .projects-header h1 {
-    font-size: 24px;
+    font-size: 30px;
   }
 
   .all-projects {
@@ -1045,7 +1048,7 @@ form .cta {
   .about {
     display: flex;
     max-width: 100%;
-    padding: 0 30px;
+    padding: 100px 10px;
     justify-content: center;
     align-items: center;
   }
@@ -1069,15 +1072,24 @@ form .cta {
   .about-sci {
     display: flex;
     flex-direction: row;
-    gap: 10px;
-    width: auto;
-    padding: 0;
+    width: 100%;
     justify-content: center;
     align-items: center;
   }
 
+  .about-sci a {
+    border-radius: 80%;
+    /* font-size: 20px; */
+    text-decoration: none;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    z-index: 1;
+  }
+
   .about-sci i {
-    font-size: 40px;
+    font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1089,8 +1101,8 @@ form .cta {
 
   #contact {
     width: 100%;
-    height: 100vh;
-    padding: 0 20px;
+    height: auto;
+    padding: 0;
   }
 
   .row {
@@ -1098,6 +1110,9 @@ form .cta {
     display: flex;
     padding: 0px 10px;
     padding-top: 100px;
+  }
+  .project-info {
+    text-align: center;
   }
 
   .right-left {
@@ -1136,9 +1151,13 @@ form .cta {
     font-size: 14px;
     display: flex;
     flex-direction: row;
+    text-decoration: none;
   }
   .contact-left p i {
-    font-size: 20px;
+    font-size: 15px;
+  }
+  .contact-left p a {
+    color: white;
   }
   .contact-right {
     width: 90%;
@@ -1178,11 +1197,11 @@ form .cta {
   }
 
   .upArrow {
-    margin-top: 200px;
     width: 100%;
     display: flex;
     padding: 0px 20px;
     justify-content: center;
     align-items: center;
+    height: auto;
   }
 }
